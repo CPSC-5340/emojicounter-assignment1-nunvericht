@@ -7,15 +7,19 @@
 
 import SwiftUI
 
+let emojis = ["🤣", "🧐", "😀", "🤩", "😂", "🦕"]
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                ForEach(emojis, id: \.self) {
+                    item in ListItem(text: item)
+                }
+            }
+            .navigationTitle("Emoji Counter")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .padding()
     }
 }
 
