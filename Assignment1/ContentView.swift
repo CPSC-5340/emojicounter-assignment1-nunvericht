@@ -3,11 +3,12 @@
 //
 // Copyright © 2023 Auburn University.
 // All Rights Reserved.
+// modified by nju0004
 
 
 import SwiftUI
 
-let emojis = ["🤣", "🧐", "😀", "🤩", "😂", "🦕"]
+let emojis = ["🤣", "😜", "😀", "🤩", "😂", "🦕", "🐉"]
 
 struct ContentView: View {
     var body: some View {

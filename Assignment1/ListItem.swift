@@ -17,17 +17,17 @@ struct ListItem: View {
             Text("Counter: \(counter)")
             Spacer()
             
-            // + button sattributes
+            // + button attributes
             Button("+") {
                 counter += 1
             }
             .font(.title)
             .frame(maxWidth: 50)
             .buttonStyle(BorderlessButtonStyle())
-            .border(Color.red)
-            .cornerRadius(3)
+            .border(Color.green)
+            .foregroundColor(.green)
             
-            // - button sattributes
+            // - button attributes
             Button("-") {
                 counter -= 1
             }
@@ -35,7 +35,7 @@ struct ListItem: View {
             .frame(maxWidth: 50)
             .buttonStyle(BorderlessButtonStyle())
             .border(Color.red)
-            .cornerRadius(3)
+            .foregroundColor(.red)
         }
         .padding()
     }
